@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="Solo Grind: level up your life">
+  <style>
+    .title { font: 800 60px 'Segoe UI', Arial, sans-serif; fill: url(#gold); letter-spacing: 2px; }
+    .sub { font: 500 18px 'Segoe UI', Arial, sans-serif; fill: #c9c3e6; letter-spacing: 3px; opacity: 0; animation: fade 1.2s .4s forwards; }
+    .lbl { font: 700 13px 'Segoe UI', Arial, sans-serif; fill: #f5d77a; }
+    .star { fill: #fff; animation: twinkle 2.4s ease-in-out infinite; }
+    .s2 { animation-delay: .6s } .s3 { animation-delay: 1.2s } .s4 { animation-delay: 1.8s }
+    .xp { animation: fill 4s ease-in-out infinite; }
+    .glow { animation: pulse 3s ease-in-out infinite; transform-origin: 450px 95px; }
+    .lvl { animation: pop 4s ease-in-out infinite; transform-origin: 765px 175px; }
+    @keyframes twinkle { 0%,100% { opacity: .15 } 50% { opacity: 1 } }
+    @keyframes fill { 0% { width: 0 } 80%,100% { width: 520px } }
+    @keyframes pulse { 0%,100% { opacity: .35; transform: scale(1) } 50% { opacity: .7; transform: scale(1.06) } }
+    @keyframes fade { to { opacity: 1 } }
+    @keyframes pop { 0%,75% { opacity: 0; transform: scale(.6) } 82% { opacity: 1; transform: scale(1.15) } 100% { opacity: 1; transform: scale(1) } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14121f"/><stop offset="1" stop-color="#2a1b3d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/><stop offset="1" stop-color="#e0a83a"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f5b942"/>
+    </linearGradient>
+    <radialGradient id="halo"><stop offset="0" stop-color="#8b5cf6" stop-opacity=".6"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="900" height="220" rx="18" fill="url(#bg)"/>
+  <ellipse class="glow" cx="450" cy="95" rx="300" ry="80" fill="url(#halo)"/>
+  <circle class="star" cx="70" cy="40" r="2"/><circle class="star s2" cx="160" cy="150" r="1.5"/>
+  <circle class="star s3" cx="820" cy="50" r="2"/><circle class="star s4" cx="740" cy="30" r="1.5"/>
+  <circle class="star s2" cx="250" cy="35" r="1.5"/><circle class="star s3" cx="640" cy="160" r="1.5"/>
+  <circle class="star s4" cx="40" cy="180" r="1.5"/><circle class="star" cx="870" cy="170" r="2"/>
+  <text class="title" x="450" y="98" text-anchor="middle">SOLO GRIND</text>
+  <text class="sub" x="450" y="132" text-anchor="middle">LEVEL UP YOUR LIFE · ONE QUEST AT A TIME</text>
+  <text class="lbl" x="190" y="168">XP</text>
+  <rect x="215" y="157" width="520" height="14" rx="7" fill="#2f2747"/>
+  <rect class="xp" x="215" y="157" width="0" height="14" rx="7" fill="url(#bar)"/>
+  <text class="lbl lvl" x="765" y="170" text-anchor="middle">LEVEL UP!</text>
+</svg>
